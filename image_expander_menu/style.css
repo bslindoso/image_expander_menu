@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: 'Mulish', sans-serif;
+  font-size: 62.5%;
+  --color-base-whitesmoke: whitesmoke;
+  --color-base-black: black;
+}
+
+body {
+  background-color: var(--color-base-black);
+}
+
+.page {
+  margin: 0 auto;
+  min-width: 30rem;
+  padding: 3.2rem;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 4vw, 3.2rem);
+  font-weight: 500;
+  color: var(--color-base-whitesmoke);
+  opacity: .92;
+  text-align: center;
+}
+
+
+/* =========================
+          FOCO AQUI 
+   ========================= */
+
+.navImage {
+  margin: 5rem auto;
+  height: 100px;
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  height: 25rem;
+  max-width: 50rem;
+}
+
+.navImage img {
+  filter: saturate(0%);
+  width: 10%;
+  border: 2px solid var(--color-base-whitesmoke);
+  object-fit: cover;
+  border-radius: 1.2rem;
+  transition: all ease 0.4s;
+  cursor: pointer;
+  aspect-ratio: 9/16;
+}
+
+.navImage img:hover {
+  filter: saturate(100%);
+  width: 100%;
+}
